@@ -1,0 +1,313 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+    width: 80%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    margin-right: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+nav ul li a:hover {
+    background: blueviolet;
+    color: white;
+}
+.logo h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    color: blueviolet;
+}
+.icon i{
+    font-size: 15px;
+    padding: 0 5px;
+    cursor: pointer;
+    color: blueviolet;
+}
+
+
+
+.container {
+    width: 80%;
+    height: 85vh;
+    color: white;
+    margin: auto;
+    background: linear-gradient( 100deg,rgba(0, 0, 0, 0.904),rgba(161, 12, 161, 0.377)) ,url(img/close-up-portrait-pensive-charming-man.jpg) no-repeat center bottom / cover;
+    position: relative;
+}
+.msg-container {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+.slider {
+    display: inline-flex;
+
+}
+.msg {
+    width: 600px;
+    height: 400px;
+}
+.msg h1 {
+    font-size: 80px;
+    
+    font-weight: bold;
+}
+.msg p {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.msg a {
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: rgba(137, 43, 226, 0.336);
+    border-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px solid rgba(0, 255, 34, 0.582);
+    margin-top: 15px;
+    transition: 0.5s;
+
+}
+.msg a:hover{
+    background: blueviolet;
+    color: yellow;
+}
+.n-bar {
+    position: absolute;
+    bottom: 20px ;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    
+}
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid white;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bar:hover {
+    background: white;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+#r1:checked ~ .slide1 {
+    margin-left: 0;
+}
+#r2:checked ~ .slide1 {
+    margin-left: -20%;
+}
+#r3:checked ~ .slide1 {
+    margin-left: -40%;
+}
+#r4:checked ~ .slide1 {
+    margin-left: -60%;
+}
+#r5:checked ~ .slide1 {
+    margin-left: -80%;
+}
+
+                        /* service-section */
+
+.service-section {
+    background: rgb(248, 244, 244);
+    padding: 100px 0;
+}
+.service-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+.service{
+    width: 20%;
+    margin: auto;
+}
+
+.service i {
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.service i:hover{
+    color: blueviolet;
+}
+.service h2{
+    font-size: 30px;
+    padding: 15px 0;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.service p{
+    font-size: 16px;
+}
+
+                            /* about-section */
+
+.about-container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+.img-area{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0;
+}
+.img-area  img {
+    width: 400px;
+    height: 400px;
+    background: rgb(158, 0, 250);
+    padding:  0 0 5px 0; 
+    
+}
+.img-two img{
+    margin-top: 150px;
+}
+.about-area {
+    width: 50%;
+    margin: auto; 
+    padding-left: 100px;
+}
+.about-area h2 {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    padding-top: 120px;
+}
+.about-area p {
+    font-size: 25px;
+    margin: 50px 0px;
+}
+
+.about-area a {
+    text-decoration: none;
+    font-size: 20px;
+    background: blueviolet;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.about-area a:hover{
+    background: rgb(80, 14, 141);
+}
+
+
+                /* product-section */
+
+.product-section{
+    width: 100%;
+    background: rgb(228, 225, 225);
+    
+}
+.product-container{
+    width: 80%;
+    margin: auto;
+}
+.product-header{
+    display: inline-block;
+    background: rgb(2, 153, 2);
+    padding: 15px 15px;
+    color: white;
+}
+.product-area{
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box-container{
+    padding: 50px 0 30px 0;
+    background: rgb(255, 254, 254);
+    margin-bottom: 40px;
+    
+}
+.detail-box{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 20px;
+    margin-top: 50px;
+}
+.price h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.price span {
+    font-size: 28px;
+    margin-right: 5px;
+}
+.price h5 {
+    font-size: 25px;
+    font-weight: 100;
+}
+.like h4 {
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.like-icon i{
+    font-size: 15px;
+    color: rgb(226, 193, 2);
+    
+}
+.btn-box a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    background: blueviolet;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-box a:hover {
+    background: rgb(94, 22, 161);
+}
