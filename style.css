@@ -158,16 +158,20 @@ input[name="r"]{
 .service{
     width: 20%;
     margin: auto;
+    padding: 30px 0;
+    transition: 0.5s;
+    cursor: pointer;
 }
-
+.service:hover {
+    color: blueviolet;
+    box-shadow: 0 0 5px rgb(37, 34, 34);
+}
 .service i {
     font-size: 50px;
     cursor: pointer;
     transition: 0.2s;
 }
-.service i:hover{
-    color: blueviolet;
-}
+
 .service h2{
     font-size: 30px;
     padding: 15px 0;
@@ -257,9 +261,9 @@ input[name="r"]{
     align-items: center;
 }
 .box {
-    width: 100%;
+    width: 30%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .box-container{
     padding: 50px 0 30px 0;
